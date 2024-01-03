@@ -21,3 +21,7 @@ function emitPhotoData(aPhoto) {
   result.push(`<p>date: ${aPhoto.date.toDateString()}</p>`);
   return result.join('\n');
 }
+
+function zznew(p) {
+  return [`<p>title: ${p.title}</p>`, emitPhotoData(p)].join('\n');
+}
