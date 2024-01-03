@@ -8,7 +8,7 @@ export function renderPerson(_outStream, aPerson) {
 }
 
 export function photoDiv(p) {
-  return ['<div>', `<p>title: ${p.title}</p>`, emitPhotoData(p), '</div>'].join('\n');
+  return ['<div>', zznew(p), '</div>'].join('\n');
 }
 
 function renderPhoto(_aPhoto) {
