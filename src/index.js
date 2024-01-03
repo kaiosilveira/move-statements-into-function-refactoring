@@ -2,8 +2,7 @@ export function renderPerson(_outStream, aPerson) {
   const result = [];
   result.push(`<p>${aPerson.name}</p>`);
   result.push(renderPhoto(aPerson.photo));
-  result.push(`<p>title: ${aPerson.photo.title}</p>`);
-  result.push(emitPhotoData(aPerson.photo));
+  result.push(zznew(aPerson.photo));
   return result.join('\n');
 }
 
